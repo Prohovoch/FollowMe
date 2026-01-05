@@ -1,0 +1,16 @@
+bin/
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.staging
+config.local.yaml
+config.local.toml
+config.local.json
+secrets/
+keys/
+*.pem
+*.key
+*.crt
+
