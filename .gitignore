@@ -1,5 +1,7 @@
 bin/
 internal/migrations/
+.devcontainer/
+.github/
 .env
 .env.local
 .env.development
