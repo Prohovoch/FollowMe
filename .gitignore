@@ -1,5 +1,5 @@
 bin/
-internal/migrations/
+migrations/
 .devcontainer/
 .github/
 .env

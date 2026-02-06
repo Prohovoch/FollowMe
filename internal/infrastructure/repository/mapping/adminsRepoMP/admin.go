@@ -1,8 +1,8 @@
 package admins
 
 import (
-	entity "github.com/Prohovoch/FollowMe/internal/warehouse/entity/admins"
-	models "github.com/Prohovoch/FollowMe/internal/warehouse/models/admins"
+	entity "github.com/Prohovoch/FollowMe/internal/warehouse/entity/admin"
+	models "github.com/Prohovoch/FollowMe/internal/warehouse/models/admin"
 )
 
 // Create an object named "Admin"
