@@ -6,7 +6,7 @@ import (
 	models "github.com/Prohovoch/FollowMe/internal/warehouse/models/admins"
 )
 
-func toModel(adminReqDTO *admins.AdminsRequest) *models.AdminModel {
+func ToModel(adminReqDTO *admins.AdminsRequest) *models.AdminModel {
 	return &models.AdminModel{
 		Name:     adminReqDTO.Name,
 		Surname:  adminReqDTO.Surname,
@@ -15,21 +15,21 @@ func toModel(adminReqDTO *admins.AdminsRequest) *models.AdminModel {
 	}
 }
 
-func toDTO_NS(adminModel *models.AdminModel) *admins.AdminsResponseNS {
+func ToDTO_NS(adminModel *models.AdminModel) *admins.AdminsResponseNS {
 	return &admins.AdminsResponseNS{
 		Name:    adminModel.Name,
 		Surname: adminModel.Surname,
 	}
 }
 
-func toDTO_MailResponse(adminModel *models.AdminModel) *admins.AdminsResponeEmail {
+func ToDTO_MailResponse(adminModel *models.AdminModel) *admins.AdminsResponeEmail {
 	return &admins.AdminsResponeEmail{
 		Email: adminModel.Email,
 	}
 }
 
 // TODO: Make a hash function on this...
-func toDTO_PassResponse(adminModel *models.AdminModel) *admins.AdminsResponsePassword {
+func ToDTO_PassResponse(adminModel *models.AdminModel) *admins.AdminsResponsePassword {
 	return &admins.AdminsResponsePassword{
 		Password: adminModel.Password,
 	}
