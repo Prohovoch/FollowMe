@@ -1,9 +1,9 @@
-package models
+package entity
 
-type AdminModel struct {
+type Admin struct {
 	Id       int32
 	Name     string
 	Surname  string
 	Password string
-	email    string
+	Email    string
 }

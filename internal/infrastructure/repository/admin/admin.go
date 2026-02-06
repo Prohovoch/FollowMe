@@ -3,7 +3,9 @@ package admin
 import (
 	"context"
 
-	models "github.com/Prohovoch/FollowMe/internal/warehouse/models/administrator"
+	mapper "github.com/Prohovoch/FollowMe/internal/infrastructure/repository/mapping/adminsRepoMP"
+
+	models "github.com/Prohovoch/FollowMe/internal/warehouse/models/admins"
 	"github.com/jackc/pgx/v5/pgxpool"
 )
 
@@ -25,7 +27,14 @@ func New(db *pgxpool.Pool) *Repository {
 	return &Repository{db: db}
 }
 
+/*
+	Just to achieve a progress with mapping's methods. Will be removed when repo will be ready!
+*/
+
+// Initializing an interface
 func (repo *Repository) CreateAdmin(ctx context.Context, admin *models.AdminModel) error {
+	// will be removed ASAP
+	mapper.ToEntity(admin)
 	return nil
 }
 
