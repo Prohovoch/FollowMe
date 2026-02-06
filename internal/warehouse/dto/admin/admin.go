@@ -1,4 +1,4 @@
-package admins
+package dto
 
 // Request DTO / WIP
 type AdminsRequest struct {

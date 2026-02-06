@@ -5,7 +5,7 @@ import (
 
 	mapper "github.com/Prohovoch/FollowMe/internal/infrastructure/repository/mapping/adminsRepoMP"
 
-	models "github.com/Prohovoch/FollowMe/internal/warehouse/models/admins"
+	models "github.com/Prohovoch/FollowMe/internal/warehouse/models/admin"
 	"github.com/jackc/pgx/v5/pgxpool"
 )
 
