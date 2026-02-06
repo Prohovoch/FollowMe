@@ -5,7 +5,7 @@ import (
 
 	mapper "github.com/Prohovoch/FollowMe/internal/infrastructure/repository/mapping/adminsRepoMP"
 
-	models "github.com/Prohovoch/FollowMe/internal/warehouse/models/admin"
+	models "github.com/Prohovoch/FollowMe/internal/warehouse/models/admins"
 	"github.com/jackc/pgx/v5/pgxpool"
 )
 
@@ -28,7 +28,7 @@ func New(db *pgxpool.Pool) *Repository {
 }
 
 /*
-	Just to achieve a progress with mapping's methods. Will be removed when repo is ready!
+	Just to achieve a progress with mapping's methods. Will be removed when repo will be ready!
 */
 
 // Initializing an interface

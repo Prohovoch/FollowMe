@@ -5,7 +5,7 @@ import (
 
 	repo "github.com/Prohovoch/FollowMe/internal/infrastructure/repository/admin"
 	mapper "github.com/Prohovoch/FollowMe/internal/usecase/mapping/adminsServMP"
-	DTO "github.com/Prohovoch/FollowMe/internal/warehouse/DTO/admin"
+	DTO "github.com/Prohovoch/FollowMe/internal/warehouse/DTO/admins"
 )
 
 type AdminService struct {
